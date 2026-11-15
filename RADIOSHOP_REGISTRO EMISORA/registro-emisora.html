@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar emisora - RADIOSHOP</title>
+
+    <link rel="stylesheet" href="registro-emisora.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <div class="logo">
+            🎧 <span>RADIO</span><strong>SHOP</strong>
+        </div>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#" class="activo">Radio en vivo</a>
+            <a href="#">Comunidad</a>
+            <a href="#">Mi cuenta</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main class="contenedor">
+
+    <div class="titulo">
+        <span>RADIOSHOP / RADIO EN VIVO</span>
+        <h1>Registrar emisora</h1>
+        <p>
+            Completa la información de tu emisora y comienza a transmitir
+            en RADIOSHOP.
+        </p>
+    </div>
+
+
+    <!-- TODO ESTO DEBE ESTAR DENTRO DEL MISMO CONTENEDOR -->
+    <div class="contenido-registro">
+
+        <!-- FORMULARIO IZQUIERDO -->
+        <section class="formulario">
+
+            <div class="encabezado-formulario">
+                <div class="icono-radio">📻</div>
+
+                <div>
+                    <h2>Información de la emisora</h2>
+                    <p>Completa los datos de tu estación de radio.</p>
+                </div>
+            </div>
+
+            <form>
+
+                <div class="fila">
+
+                    <div class="campo">
+                        <label>Nombre de la emisora</label>
+                        <input type="text" placeholder="Ej: Radio Música 90">
+                    </div>
+
+                    <div class="campo">
+                        <label>Administrador o propietario</label>
+                        <input type="text" placeholder="Nombre del administrador">
+                    </div>
+
+                </div>
+
+
+                <div class="campo">
+                    <label>Descripción de la emisora</label>
+
+                    <textarea
+                        rows="5"
+                        placeholder="Cuéntanos sobre tu emisora..."
+                    ></textarea>
+                </div>
+
+
+                <div class="fila">
+
+                    <div class="campo">
+                        <label>Género musical</label>
+
+                        <select>
+                            <option>Selecciona un género</option>
+                            <option>Pop</option>
+                            <option>Rock</option>
+                            <option>Reguetón</option>
+                            <option>Salsa</option>
+                            <option>Vallenato</option>
+                            <option>Variada</option>
+                        </select>
+                    </div>
+
+
+                    <div class="campo">
+                        <label>Frecuencia AM/FM</label>
+                        <input
+                            type="text"
+                            placeholder="Ej: 95.5 FM"
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label>Ciudad</label>
+                        <input
+                            type="text"
+                            placeholder="Ej: Bogotá, Colombia"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="seccion">
+
+                    <h3>📡 Información de transmisión</h3>
+
+                    <div class="fila">
+
+                        <div class="campo">
+                            <label>URL de transmisión</label>
+
+                            <input
+                                type="url"
+                                placeholder="https://ejemplo.com/stream"
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label>Horario de transmisión</label>
+
+                            <div class="horarios">
+
+                                <input type="time">
+                                <input type="time">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="seccion">
+
+                    <h3>🎨 Identidad de la emisora</h3>
+
+                    <div class="campo">
+                        <label>Logo de la emisora</label>
+
+                        <input
+                            type="file"
+                            accept="image/*"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="acciones">
+
+                    <button
+                        type="button"
+                        class="btn-cancelar"
+                    >
+                        Cancelar
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="btn-registrar"
+                    >
+                        📻 Registrar emisora
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- BARRA DERECHA -->
+        <aside class="barra-lateral">
+
+            <div class="tarjeta-lateral">
+
+                <h3>☆ Antes de registrar tu emisora</h3>
+
+
+                <div class="consejo">
+
+                    <div class="icono-consejo">
+                        ◉
+                    </div>
+
+                    <div>
+                        <strong>
+                            Asegúrate de tener tu transmisión activa
+                        </strong>
+
+                        <p>
+                            Verifica que tu enlace de stream
+                            funcione correctamente.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="consejo">
+
+                    <div class="icono-consejo azul">
+                        ✓
+                    </div>
+
+                    <div>
+                        <strong>
+                            Información clara y real
+                        </strong>
+
+                        <p>
+                            Usa datos reales de tu emisora
+                            para generar confianza.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="consejo">
+
+                    <div class="icono-consejo morado">
+                        ▧
+                    </div>
+
+                    <div>
+                        <strong>
+                            Logo de buena calidad
+                        </strong>
+
+                        <p>
+                            Un buen logo hace que tu emisora
+                            destaque.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="consejo">
+
+                    <div class="icono-consejo rosa">
+                        ♡
+                    </div>
+
+                    <div>
+                        <strong>
+                            Cumple nuestras políticas
+                        </strong>
+
+                        <p>
+                            No se permite contenido ofensivo,
+                            ilegal o que infrinja derechos.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="tarjeta-bienvenida">
+
+                <div class="icono-bienvenida">
+                    🎧
+                </div>
+
+                <div>
+
+                    <h3>
+                        ¡Bienvenido a RADIOSHOP!
+                    </h3>
+
+                    <p>
+                        Únete a nuestra comunidad de emisoras
+                        y lleva tu señal a miles de oyentes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main> 
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+
+        <div class="footer-logo">
+            🎧 RADIO<strong>SHOP</strong>
+        </div>
+
+        <p>
+            © 2026 RADIOSHOP. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,687 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050711;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   ENCABEZADO
+================================ */
+
+.header {
+    height: 80px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #03050c;
+
+    border-bottom: 1px solid #ff00aa;
+    box-shadow: 0 0 15px rgba(255, 0, 170, 0.25);
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: white;
+}
+
+.logo strong {
+    color: #ff00aa;
+}
+
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav .activo {
+    color: #ff00aa;
+}
+
+
+/* ================================
+   CONTENEDOR
+================================ */
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+
+.titulo {
+    margin-bottom: 30px;
+}
+
+.titulo span {
+    color: #168cff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.titulo h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.titulo p {
+    color: #aeb4c5;
+    font-size: 17px;
+}
+
+
+/* ================================
+   FORMULARIO
+================================ */
+
+.formulario {
+    background: #080d19;
+    border: 1px solid #243451;
+    border-radius: 15px;
+    padding: 35px;
+
+    box-shadow: 0 0 30px rgba(0, 110, 255, 0.08);
+}
+
+
+.encabezado-formulario {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid #26344e;
+}
+
+
+.icono-radio {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #ff00aa,
+        #6a00ff,
+        #008cff
+    );
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 170, 0.4);
+}
+
+
+.encabezado-formulario h2 {
+    margin-bottom: 5px;
+}
+
+.encabezado-formulario p {
+    color: #8993a8;
+}
+
+
+/* ================================
+   CAMPOS
+================================ */
+
+.campo {
+    margin-bottom: 22px;
+    flex: 1;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+    color: #e7e9ef;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    background: #050914;
+
+    color: white;
+
+    border: 1px solid #30415f;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff00aa;
+
+    box-shadow:
+        0 0 10px rgba(255, 0, 170, 0.25);
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+select {
+    cursor: pointer;
+}
+
+
+input[type="file"] {
+    padding: 11px;
+}
+
+
+small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #7e8aa2;
+}
+
+
+/* ================================
+   FILAS
+================================ */
+
+.fila {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* ================================
+   SECCIONES
+================================ */
+
+.seccion {
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #26344e;
+}
+
+
+.seccion h3 {
+    margin-bottom: 22px;
+
+    color: #ff00aa;
+
+    font-size: 18px;
+}
+
+
+/* ================================
+   BOTONES
+================================ */
+
+.acciones {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #26344e;
+}
+
+
+.acciones button {
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn-cancelar {
+    background: transparent;
+
+    color: #c8ceda;
+
+    border: 1px solid #45536d;
+}
+
+
+.btn-cancelar:hover {
+    border-color: #ff00aa;
+
+    color: #ff00aa;
+}
+
+
+.btn-registrar {
+    border: none;
+
+    color: white;
+
+    background: linear-gradient(
+        90deg,
+        #ff009d,
+        #7b00ff,
+        #007bff
+    );
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 170, 0.3);
+}
+
+
+.btn-registrar:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 170, 0.5);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    margin-top: 60px;
+
+    padding: 30px 6%;
+
+    text-align: center;
+
+    border-top: 1px solid #26344e;
+
+    color: #737d91;
+}
+
+
+.footer-logo {
+    font-size: 22px;
+
+    margin-bottom: 12px;
+
+    color: white;
+}
+
+
+.footer-logo strong {
+    color: #ff00aa;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+
+    .header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .contenedor {
+        width: 94%;
+
+        margin: 30px auto;
+    }
+
+
+    .titulo h1 {
+        font-size: 32px;
+    }
+
+
+    .formulario {
+        padding: 22px;
+    }
+
+
+    .fila {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .acciones {
+        flex-direction: column;
+    }
+
+
+    .acciones button {
+        width: 100%;
+    }
+
+}
+
+/* =================================
+   CONTENIDO REGISTRO
+================================= */
+
+.contenido-registro {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(300px, 0.85fr);
+    gap: 25px;
+    align-items: start;
+}
+
+
+/* =================================
+   BARRA LATERAL
+================================= */
+
+.barra-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* =================================
+   TARJETA CONSEJOS
+================================= */
+
+.tarjeta-lateral {
+    background: #080d19;
+    border: 1px solid #773cff;
+    border-radius: 12px;
+    padding: 25px;
+
+    box-shadow:
+        0 0 20px rgba(119, 60, 255, 0.12);
+}
+
+.tarjeta-lateral h3 {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 28px;
+}
+
+
+/* =================================
+   CONSEJOS
+================================= */
+
+.consejo {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 25px;
+}
+
+.consejo:last-child {
+    margin-bottom: 0;
+}
+
+.icono-consejo {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #ff00aa;
+    border-radius: 50%;
+
+    color: #ff00aa;
+    font-size: 22px;
+}
+
+.icono-consejo.azul {
+    color: #008cff;
+    border-color: #008cff;
+}
+
+.icono-consejo.morado {
+    color: #a83cff;
+    border-color: #a83cff;
+}
+
+.icono-consejo.rosa {
+    color: #ff008c;
+    border-color: #ff008c;
+}
+
+.consejo strong {
+    display: block;
+    color: white;
+    margin-bottom: 7px;
+}
+
+.consejo p {
+    color: #929bad;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =================================
+   TARJETA BIENVENIDA
+================================= */
+
+.tarjeta-bienvenida {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px;
+
+    background: #080d19;
+
+    border: 1px solid #ff00aa;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 20px rgba(255, 0, 170, 0.12);
+}
+
+.icono-bienvenida {
+    font-size: 40px;
+
+    min-width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 2px solid #008cff;
+}
+
+.tarjeta-bienvenida h3 {
+    margin-bottom: 10px;
+}
+
+.tarjeta-bienvenida p {
+    color: #929bad;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .contenido-registro {
+        grid-template-columns: 1fr;
+    }
+
+    .barra-lateral {
+        order: 2;
+    }
+
+}
+
+/* ========================================
+   DISTRIBUCIÓN PRINCIPAL
+======================================== */
+
+.contenido-registro {
+    width: 100%;
+
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 2fr) minmax(300px, 0.85fr) !important;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* FORMULARIO */
+
+.contenido-registro .formulario {
+    width: 100%;
+}
+
+
+/* BARRA DERECHA */
+
+.contenido-registro .barra-lateral {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* CAMPOS */
+
+.contenido-registro .fila {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+
+/* HORARIOS */
+
+.horarios {
+    display: flex;
+
+    gap: 10px;
+}
+
+.horarios input {
+    width: 50%;
+}
+
+
+/* ========================================
+   PANTALLA PEQUEÑA
+======================================== */
+
+@media (max-width: 900px) {
+
+    .contenido-registro {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contenido-registro .fila {
+        flex-direction: column;
+    }
+
+    .horarios {
+        flex-direction: column;
+    }
+
+    .horarios input {
+        width: 100%;
+    }
+
+}

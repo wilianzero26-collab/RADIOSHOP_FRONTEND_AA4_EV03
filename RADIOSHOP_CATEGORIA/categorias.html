@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RADIOSHOP - Categorías</title>
+
+    <link rel="stylesheet" href="categorias.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         BARRA SUPERIOR
+    ====================================== -->
+
+    <header class="topbar">
+
+        <div class="logo">
+            <span class="logo-icon">🎧</span>
+            <span>RADIO<span>SHOP</span></span>
+        </div>
+
+        <div class="search-box">
+
+            <span>🔎</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar categoría o negocio..."
+            >
+
+        </div>
+
+        <nav class="top-menu">
+
+            <a href="#">Inicio</a>
+            <a href="#">Radio</a>
+            <a href="#">Cuenta</a>
+
+        </nav>
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+        >
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- =====================================
+         ESTRUCTURA PRINCIPAL
+    ====================================== -->
+
+    <div class="layout">
+
+
+        <!-- =================================
+             MENÚ LATERAL
+        ================================== -->
+
+        <aside
+            class="sidebar"
+            id="sidebar"
+        >
+
+            <div class="menu-title">
+                MENÚ
+            </div>
+
+            <a href="#" class="menu-item">
+                <span>🏠</span>
+                <span>Inicio</span>
+            </a>
+
+            <a href="#" class="menu-item active">
+                <span>🛍️</span>
+                <span>Categorías</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>🛒</span>
+                <span>Tienda</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>📻</span>
+                <span>Radio</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>🎬</span>
+                <span>Videos</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>👥</span>
+                <span>Comunidad</span>
+            </a>
+
+        </aside>
+
+
+        <!-- =================================
+             CONTENIDO
+        ================================== -->
+
+        <main class="content">
+
+
+            <!-- ENCABEZADO -->
+
+            <section class="page-header">
+
+                <div>
+
+                    <h1>
+                        Explora las categorías
+                    </h1>
+
+                    <p>
+                        Encuentra tiendas, profesionales y servicios
+                        cerca de ti.
+                    </p>
+
+                </div>
+
+                <button
+                    class="location-button"
+                    id="locationButton"
+                >
+                    📍 Mi ubicación
+                </button>
+
+            </section>
+
+
+            <!-- MENSAJE DE UBICACIÓN -->
+
+            <div
+                class="location-message"
+                id="locationMessage"
+            >
+                Selecciona "Mi ubicación" para encontrar
+                negocios cercanos.
+            </div>
+
+
+            <!-- =================================
+                 CATEGORÍAS
+            ================================== -->
+
+            <section class="categories-grid" id="categoriesGrid">
+
+
+                <!-- VETERINARIA -->
+
+                <article
+                    class="category-card"
+                    data-category="veterinaria mascotas animales"
+                >
+
+                    <div class="category-icon veterinary">
+                        🐾
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Veterinarias
+                        </h2>
+
+                        <p>
+                            Veterinarias y tiendas para mascotas
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- ÓPTICAS -->
+
+                <article
+                    class="category-card"
+                    data-category="optica gafas lentes vision"
+                >
+
+                    <div class="category-icon optics">
+                        👓
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Ópticas
+                        </h2>
+
+                        <p>
+                            Gafas, lentes y servicios de visión
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- DENTISTAS -->
+
+                <article
+                    class="category-card"
+                    data-category="dentista odontologia dientes clinica dental"
+                >
+
+                    <div class="category-icon dental">
+                        🦷
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Dentistas
+                        </h2>
+
+                        <p>
+                            Clínicas y profesionales odontológicos
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- BARBERÍAS -->
+
+                <article
+                    class="category-card"
+                    data-category="barberia peluqueria cabello belleza"
+                >
+
+                    <div class="category-icon barber">
+                        💈
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Barberías
+                        </h2>
+
+                        <p>
+                            Barberías, peluquerías y salones
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- RESTAURANTES -->
+
+                <article
+                    class="category-card"
+                    data-category="restaurante comida alimentos cafe"
+                >
+
+                    <div class="category-icon restaurant">
+                        🍔
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Restaurantes
+                        </h2>
+
+                        <p>
+                            Restaurantes, cafés y comida
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- TECNOLOGÍA -->
+
+                <article
+                    class="category-card"
+                    data-category="tecnologia celulares computadores electronica"
+                >
+
+                    <div class="category-icon technology">
+                        📱
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Tecnología
+                        </h2>
+
+                        <p>
+                            Celulares, computadores y electrónica
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- TALLERES -->
+
+                <article
+                    class="category-card"
+                    data-category="taller mecanica carros motos automoviles"
+                >
+
+                    <div class="category-icon mechanic">
+                        🔧
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Talleres
+                        </h2>
+
+                        <p>
+                            Mecánica, carros y motocicletas
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- MODA -->
+
+                <article
+                    class="category-card"
+                    data-category="moda ropa zapatos vestuario"
+                >
+
+                    <div class="category-icon fashion">
+                        👗
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Moda
+                        </h2>
+
+                        <p>
+                            Ropa, zapatos y accesorios
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- HOGAR -->
+
+                <article
+                    class="category-card"
+                    data-category="hogar muebles decoracion casa"
+                >
+
+                    <div class="category-icon home">
+                        🏠
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Hogar
+                        </h2>
+
+                        <p>
+                            Muebles, decoración y artículos para casa
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- AUDIO -->
+
+                <article
+                    class="category-card"
+                    data-category="audio musica sonido parlantes audifonos"
+                >
+
+                    <div class="category-icon audio">
+                        🎵
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Audio y música
+                        </h2>
+
+                        <p>
+                            Equipos de sonido, audio e instrumentos
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- BELLEZA -->
+
+                <article
+                    class="category-card"
+                    data-category="belleza cosmeticos maquillaje spa"
+                >
+
+                    <div class="category-icon beauty">
+                        💄
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Belleza
+                        </h2>
+
+                        <p>
+                            Cosméticos, maquillaje y servicios
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+
+                <!-- GIMNASIOS -->
+
+                <article
+                    class="category-card"
+                    data-category="gimnasio deporte fitness entrenamiento"
+                >
+
+                    <div class="category-icon gym">
+                        🏋️
+                    </div>
+
+                    <div class="category-info">
+
+                        <h2>
+                            Gimnasios
+                        </h2>
+
+                        <p>
+                            Gimnasios, deporte y entrenamiento
+                        </p>
+
+                        <span class="local-badge">
+                            🏪 Visita el local
+                        </span>
+
+                    </div>
+
+                    <button class="category-button">
+                        Ver negocios
+                    </button>
+
+                </article>
+
+            </section>
+
+
+            <!-- SIN RESULTADOS -->
+
+            <div
+                class="no-results"
+                id="noResults"
+            >
+                🔎 No encontramos ninguna categoría.
+            </div>
+
+
+            <!-- =================================
+                 INFORMACIÓN
+            ================================== -->
+
+            <section class="local-info">
+
+                <div class="local-info-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <h2>
+                        Compra y descubre negocios locales
+                    </h2>
+
+                    <p>
+                        RADIOSHOP conecta a los clientes con
+                        establecimientos físicos. Consulta la
+                        información del negocio y visita el local.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="categorias.js"></script>
+
+</body>
+</html>

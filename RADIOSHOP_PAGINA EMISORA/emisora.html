@@ -1,0 +1,95 @@
+<!-- RADIOSHOP: Estructura HTML de la página de emisora en vivo -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RADIOSHOP | Emisora en Vivo</title>
+<link rel="stylesheet" href="emisora.css">
+</head>
+<body>
+<header class="encabezado">
+  <a class="logo" href="#">🎧 <span>RADIO</span>SHOP</a>
+  <nav>
+    <a href="#">Inicio</a><a href="#">Tienda</a><a class="activo" href="#">Radio</a>
+    <a href="#">Comunidad</a><a href="#">Mi cuenta</a>
+  </nav>
+</header>
+
+<main class="contenedor">
+<section class="titulo">
+  <div><span class="etiqueta-vivo">● EN VIVO</span><h1>RADIOSHOP LIVE</h1>
+  <p>La música, el DJ y la comunidad en un solo lugar.</p></div>
+  <button class="btn-seguir" id="btnSeguir">♡ Seguir emisora</button>
+</section>
+
+<section class="zona-principal">
+<div class="columna-izquierda">
+<article class="tarjeta video-card">
+  <div class="encabezado-tarjeta"><h2>📹 Transmisión en vivo del DJ</h2><span class="estado">● EN VIVO</span></div>
+  <div class="video">
+    <video id="videoDJ" controls></video>
+    <div class="video-placeholder"><div class="camara">📹</div><strong>DJ EN VIVO</strong><span>La transmisión aparecerá aquí</span></div>
+  </div>
+  <div class="datos-dj"><div><strong>RADIOSHOP FM</strong><span>🎙️ DJ RADIOSHOP</span></div>
+  <div class="oyentes">👥 <span id="oyentes">128</span> oyentes</div></div>
+</article>
+
+<article class="tarjeta">
+  <div class="encabezado-tarjeta"><h2>🎚️ Ecualizador</h2>
+  <label class="selector"><span>Tipo:</span><select id="tipoEcualizador">
+    <option value="clasico">Clásico</option><option value="neon">Neon</option>
+    <option value="espectro">Espectro</option><option value="ondas">Ondas</option>
+  </select></label></div>
+  <div class="ecualizador" id="ecualizador"><div class="barras">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div></div>
+  <div class="controles">
+    <button id="btnAnterior">⏮</button><button id="btnPlay" class="play">▶</button><button id="btnSiguiente">⏭</button>
+    <label class="volumen">🔊 <input id="volumen" type="range" min="0" max="100" value="80"></label>
+  </div>
+  <div class="cancion"><div class="mini-portada">🎵</div><div>
+    <strong id="cancionActual">Selecciona una transmisión</strong><span id="artistaActual">RADIOSHOP LIVE</span>
+  </div></div>
+</article>
+</div>
+
+<aside class="columna-derecha">
+<article class="tarjeta album-card"><h2>💿 Álbum musical</h2>
+  <div class="portada"><div>🎧</div></div>
+  <div class="album-info"><span class="pequeno">SONANDO AHORA</span><h3 id="albumNombre">RADIOSHOP LIVE</h3><p id="albumArtista">DJ RADIOSHOP</p></div>
+  <div class="progreso"><div class="barra-progreso" id="barraProgreso"></div></div>
+</article>
+
+<article class="tarjeta encuesta-card">
+  <div class="titulo-seccion"><h2>📊 Encuesta</h2><span>Vota</span></div>
+  <p class="pregunta">¿Qué música quieres escuchar ahora?</p>
+  <div class="opciones">
+    <label><input type="radio" name="encuesta" value="Reguetón"> Reguetón</label>
+    <label><input type="radio" name="encuesta" value="Electrónica"> Electrónica</label>
+    <label><input type="radio" name="encuesta" value="Rock"> Rock</label>
+    <label><input type="radio" name="encuesta" value="Salsa"> Salsa</label>
+  </div>
+  <button class="btn-votar" id="btnVotar">VOTAR</button><div id="resultadoEncuesta" class="resultado"></div>
+</article>
+</aside>
+</section>
+
+<section class="tarjeta chat-card">
+  <div class="encabezado-tarjeta"><div><h2>💬 Sala de chat</h2><span class="subtitulo">Comparte con la comunidad de RADIOSHOP</span></div>
+  <span class="usuarios-chat">● <span id="usuariosChat">24</span> conectados</span></div>
+  <div class="mensajes" id="mensajes">
+    <div class="mensaje"><div class="avatar">A</div><div><strong>Alex</strong><p>¡Saludos desde Bogotá! 🎧</p></div></div>
+    <div class="mensaje"><div class="avatar">D</div><div><strong>DJ RADIOSHOP</strong><p>¡Bienvenidos a la transmisión! 🔥</p></div></div>
+    <div class="mensaje"><div class="avatar">M</div><div><strong>Maria</strong><p>Excelente música 👏</p></div></div>
+  </div>
+  <form class="escribir" id="formChat"><input id="mensajeInput" type="text" maxlength="200" placeholder="Escribe un mensaje..." autocomplete="off">
+  <button type="submit">ENVIAR</button></form>
+</section>
+</main>
+<footer><strong>🎧 RADIOSHOP</strong><span>Tu música. Tu radio. Tu comunidad.</span></footer>
+<script src="emisora.js"></script>
+</body>
+</html>

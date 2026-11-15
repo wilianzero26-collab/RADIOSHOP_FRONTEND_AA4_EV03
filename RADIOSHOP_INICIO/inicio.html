@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RADIOSHOP | Inicio</title>
+
+    <link rel="stylesheet" href="inicio.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRA SUPERIOR
+    ========================== -->
+
+    <header class="barra-superior">
+
+        <a href="inicio.html" class="logo">
+            🎧 <span>RADIO</span>SHOP
+        </a>
+
+        <nav class="menu">
+
+            <a href="inicio.html" class="activo">
+                🏠 Inicio
+            </a>
+
+            <a href="carrito.html">
+                🛒 Tienda
+            </a>
+
+            <a href="registro-emisora.html">
+                📻 Radio
+            </a>
+
+            <a href="video-anuncios.html">
+                🎬 Videos
+            </a>
+
+            <a href="categorias.html">
+                🗂️ Categorías
+            </a>
+
+            <a href="comunidad.html">
+                👥 Comunidad
+            </a>
+
+        </nav>
+
+        <!-- Carritos -->
+
+        <div class="carritos">
+
+            <a href="envios.html" class="carrito-envios">
+                🚚
+                <span>Envíos</span>
+            </a>
+
+            <a href="carrito.html" class="carrito-compras">
+
+                🛒
+                <span>Compras</span>
+
+                <b id="contador-carrito">2</b>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+
+    <!-- =========================
+         PRODUCTOS
+    ========================== -->
+
+    <main class="contenedor">
+
+        <div class="titulo-productos">
+
+            <div>
+
+                <h2>
+                    🔥 Productos destacados
+                </h2>
+
+                <p>
+                    Productos disponibles para comprar.
+                </p>
+
+            </div>
+
+
+            <!-- Ordenar -->
+
+            <select id="ordenar">
+
+                <option value="destacados">
+                    Ordenar: Destacados
+                </option>
+
+                <option value="menor">
+                    Precio menor
+                </option>
+
+                <option value="mayor">
+                    Precio mayor
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- =========================
+             LISTA DE PRODUCTOS
+        ========================== -->
+
+        <section class="productos" id="productos">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <article class="producto" data-precio="189900">
+
+                <div class="imagen-producto">
+
+                    🎧
+
+                    <span>
+                        EN VENTA
+                    </span>
+
+                </div>
+
+                <div class="informacion">
+
+                    <small>
+                        AUDIO
+                    </small>
+
+                    <h3>
+                        Audífonos inalámbricos Pro
+                    </h3>
+
+                    <p>
+                        Sonido de alta calidad para disfrutar
+                        música y radio.
+                    </p>
+
+                    <div class="precio">
+                        $189.900
+                    </div>
+
+                    <div class="vendedor">
+                        Vendedor: Audio Store
+                    </div>
+
+                    <button class="agregar-carrito">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <article class="producto" data-precio="349900">
+
+                <div class="imagen-producto morado">
+
+                    🔊
+
+                    <span>
+                        EN VENTA
+                    </span>
+
+                </div>
+
+                <div class="informacion">
+
+                    <small>
+                        AUDIO
+                    </small>
+
+                    <h3>
+                        Parlante portátil Bluetooth
+                    </h3>
+
+                    <p>
+                        Parlante para música, eventos y reuniones.
+                    </p>
+
+                    <div class="precio">
+                        $349.900
+                    </div>
+
+                    <div class="vendedor">
+                        Vendedor: Sound Market
+                    </div>
+
+                    <button class="agregar-carrito">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <article class="producto" data-precio="529900">
+
+                <div class="imagen-producto azul">
+
+                    🎤
+
+                    <span>
+                        EN VENTA
+                    </span>
+
+                </div>
+
+                <div class="informacion">
+
+                    <small>
+                        EQUIPOS
+                    </small>
+
+                    <h3>
+                        Micrófono para transmisiones
+                    </h3>
+
+                    <p>
+                        Ideal para emisoras, podcasts y transmisiones.
+                    </p>
+
+                    <div class="precio">
+                        $529.900
+                    </div>
+
+                    <div class="vendedor">
+                        Vendedor: Radio Tech
+                    </div>
+
+                    <button class="agregar-carrito">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 4 -->
+
+            <article class="producto" data-precio="799900">
+
+                <div class="imagen-producto naranja">
+
+                    🎛️
+
+                    <span>
+                        EN VENTA
+                    </span>
+
+                </div>
+
+                <div class="informacion">
+
+                    <small>
+                        PRODUCCIÓN
+                    </small>
+
+                    <h3>
+                        Consola de audio compacta
+                    </h3>
+
+                    <p>
+                        Controla tus fuentes de audio para emisoras.
+                    </p>
+
+                    <div class="precio">
+                        $799.900
+                    </div>
+
+                    <div class="vendedor">
+                        Vendedor: Studio Pro
+                    </div>
+
+                    <button class="agregar-carrito">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 5 -->
+
+            <article class="producto" data-precio="129900">
+
+                <div class="imagen-producto rosado">
+
+                    🎙️
+
+                    <span>
+                        EN VENTA
+                    </span>
+
+                </div>
+
+                <div class="informacion">
+
+                    <small>
+                        ACCESORIOS
+                    </small>
+
+                    <h3>
+                        Micrófono de escritorio
+                    </h3>
+
+                    <p>
+                        Para grabaciones, llamadas y contenido digital.
+                    </p>
+
+                    <div class="precio">
+                        $129.900
+                    </div>
+
+                    <div class="vendedor">
+                        Vendedor: Digital Audio
+                    </div>
+
+                    <button class="agregar-carrito">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 6 -->
+
+            <article class="producto" data-precio="239900">
+
+                <div class="imagen-producto amarillo">
+
+                    🎸
+
+                    <span>
+                        EN VENTA
+                    </span>
+
+                </div>
+
+                <div class="informacion">
+
+                    <small>
+                        INSTRUMENTOS
+                    </small>
+
+                    <h3>
+                        Accesorios para guitarra
+                    </h3>
+
+                    <p>
+                        Accesorios para músicos y creadores.
+                    </p>
+
+                    <div class="precio">
+                        $239.900
+                    </div>
+
+                    <div class="vendedor">
+                        Vendedor: Music Zone
+                    </div>
+
+                    <button class="agregar-carrito">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer>
+
+        🎧 <strong>RADIOSHOP</strong>
+
+        <span>
+            Compra · Radio · Videos · Comunidad
+        </span>
+
+    </footer>
+
+
+    <script src="inicio.js"></script>
+
+</body>
+
+</html>
